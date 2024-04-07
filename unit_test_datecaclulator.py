@@ -4,7 +4,7 @@ from datetime import datetime, timedelta
 import datecalculator as datec
 import numpy
 
-NEW_YEARS_EVE_THIS_YEAR=datetime.today().replace(2022,1,1,0,0,0,0)
+NEW_YEARS_EVE_THIS_YEAR=datetime.today().replace(2024,1,1,0,0,0,0)
 MONTHS=[1,2,3,4,5,6,7,8,9,10,11,12]
 
 ## Helper functions
@@ -79,7 +79,7 @@ class datetimeTest(unittest.TestCase):
             'day_offset':0,
             'week_offset':0,
             'month_offset':-1,
-            'expected_datetime':datetime.today().replace(2021,12,1,0,0,0,0)
+            'expected_datetime':datetime.today().replace(2023,12,1,0,0,0,0)
         }, 
         {
             'test_case':'Returned datetime is one year before',
@@ -189,7 +189,7 @@ class datetimeTest(unittest.TestCase):
             'month_offset':-1,
             'day_of_week': None,
             'return_type':'unixtime',
-            'expected_datetime':datetime.today().replace(2021,12,1,0,0,0,0).timestamp()
+            'expected_datetime':datetime.today().replace(2023,12,1,0,0,0,0).timestamp()
         }, 
         {
             'test_case':'Returned datetime is one year before',
@@ -223,7 +223,7 @@ class datetimeTest(unittest.TestCase):
         },
         {
             'test_case':'Returned datetime the Monday of the same week',
-            'current_datetime':get_date(0, WEEK0, DAY1, 0, 0),
+            'current_datetime':get_date(0, WEEK0, DAY0, 0, 0),
             'day_offset':0,
             'week_offset':0,
             'month_offset':0,
