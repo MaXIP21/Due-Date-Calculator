@@ -18,3 +18,47 @@ Class:
 Unit tests:
 - unit_test_datecaclulator # Contains the unit tests of the class
 
+# To run the code in your Linux
+I recommend to use a virtual environment to run the tests (or any of your python scripts)
+
+To create a virtual environment run the following commands and replace the {vitrual environment name} with a name of your choice:
+
+```
+$ python3 -m venv {vitrual environment name} 
+$ source {vitrual environment name}/bin/activate
+```
+
+### Then clone the code
+
+```
+$ git clone https://github.com/MaXIP21/date-calculator.git
+```
+
+### Lastly install the requirements
+
+```
+$ pip3 install -r date-calculator/requirements.txt
+```
+
+
+### To run the unittests
+```
+python -m unittest unit_test_calculate_due_date.py
+python -m unittest unit_test_datecaclulator.py
+```
+
+### Example output 
+```
+(unittest-venv) ~/date-calculator$ python -m unittest unit_test_calculate_due_date.py
+.........
+----------------------------------------------------------------------
+Ran 9 tests in 0.007s
+
+OK
+(unittest-venv) ~/date-calculator$ python -m unittest unit_test_datecaclulator.py
+.................................
+----------------------------------------------------------------------
+Ran 33 tests in 0.003s
+
+OK
+```
