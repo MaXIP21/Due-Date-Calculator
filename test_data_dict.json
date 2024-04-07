@@ -1,0 +1,31 @@
+{
+    "check_rotation_left_one_step_no_year_overlap": {
+    "test_case": "Check left rotation of a list", 
+    "start_month_list":[2,3,4,5,6,7,8,9,10,11,12,1],
+    "expected_month_list":[1,2,3,4,5,6,7,8,9,10,11,12],
+    "shift_value":-1, 
+    "year_offset":0
+    },
+    "check_rotation_left_with_year_overlap": {
+    "test_case": "Check left rotation of a list with year overlap year must be minus one", 
+    "start_month_list":[1,2,3,4,5,6,7,8,9,10,11,12],
+    "expected_month_list":[12,1,2,3,4,5,6,7,8,9,10,11],
+    "shift_value":-1, 
+    "year_offset":-1
+    },
+    "check_rotation_left_twelve_steps_returns_same_list": {
+    "test_case": "Twelve rotation left returns the same list with year minus one", 
+    "start_month_list":[1,2,3,4,5,6,7,8,9,10,11,12],
+    "expected_month_list":[1,2,3,4,5,6,7,8,9,10,11,12],
+    "shift_value":-12, 
+    "year_offset":-1
+    },
+    "check_rotation_right_twelve_steps_returns_same_list": {
+    "test_case": "Twelve rotation right returns the same list with year plus one", 
+    "start_month_list":[1,2,3,4,5,6,7,8,9,10,11,12],
+    "expected_month_list":[1,2,3,4,5,6,7,8,9,10,11,12],
+    "shift_value":12, 
+    "year_offset":1
+    }
+    
+}
